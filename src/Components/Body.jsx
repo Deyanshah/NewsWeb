@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import NewsItem from "./NewsItem";
+import NewsCard from "./NewsCard";
 
 const NewsBoard = ({ category }) => {
 
@@ -52,7 +52,7 @@ const NewsBoard = ({ category }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
         {articles.map((news, index) => (
-          <NewsItem
+          <NewsCard
             key={index}
             title={news.title}
             description={news.description}
